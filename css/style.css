@@ -1,0 +1,184 @@
+/* adding google fonts with an import */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Condensed&family=Special+Elite&display=swap');
+
+:root {
+    --beige-color: #F6E3C5;
+    --sea-color: #A0D995;
+    --dark-sea-color: #6CC4A1;
+    --blue-color: #4CACBC;
+}
+body {
+    background-color: var(--beige-color);
+    
+    font-family: "Roboto Condensed";
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    background-image: url("/css/Lucky-Shrub-logos/luckyShrub.jpg");
+    min-height: 40em; 
+    box-shadow: inset 0px 0px 20px 4px black; /* change to alter the effect*/
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* center the logo in the header element */
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3em;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--dark-sea-color);
+}
+
+nav li a:hover {
+    color: #337c89;
+}
+
+.underline {
+    background-color: var(--dark-sea-color);
+    height: .02em;
+    margin: 0 15em;
+}
+
+main {
+    margin: 0 10em 2em 10em;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    flex: 1;
+}
+
+.mainArticle {
+    background-image: url('/css/Lucky-Shrub-logos/pexels-quang-nguyen-vinh-2132240.jpg');
+    margin: 7em 1em;
+    background-size: cover;
+    /* height: 20em; */
+    color: white;
+    padding: 0 2em;
+    opacity: 0.85;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px rgba(85, 82, 62, 0.75);
+}
+
+.smallArticle {
+    background: rgb(160,217,149);
+    background: linear-gradient(180deg, rgba(160,217,149,1) 0%, rgba(108,196,161,1) 100%);
+    
+    color: white;
+    /* height: 30em; */
+    box-shadow: 2px 2px 20px 2px rgba(85, 82, 62, 0.75);
+    border-radius: 10px;
+    margin: 0.7em;
+    padding: 1em;
+    opacity: .8;
+}
+
+.smallBlogImage {
+    width: 100%;
+    height: 15em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px 2px rgba(85, 82, 62, 0.75);
+    object-fit: cover;
+}
+
+.blog:hover {
+    opacity: .95;
+    scale: 1.01;
+}
+
+.bannerImage {
+    width: 60em;
+}
+
+footer {
+    display: flex;
+    color: var(--dark-sea-color);
+    margin-top: 2em;
+}
+
+footer div {
+    flex: 1;
+}
+
+.leftFoot {
+    text-align: start;
+    margin-left: 5em;
+}
+
+.rightFoot {
+    text-align: end;
+    margin-right: 5em;
+}
+
+@media (max-width: 480px) {
+    #section2 {
+      display: block;
+    }
+    #section2 p {
+        display: none;
+    }
+    main {
+        margin: 0;
+    }
+    .mainArticle {
+        margin: 1em;
+    }
+    nav li {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media (max-width: 1024px) {
+    #section2 {
+      display: block;
+    }
+    #section2 p {
+        display: none;
+    }
+    main {
+        margin: 0;
+    }
+    .mainArticle {
+        margin: 1em;
+    }
+    nav li {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
